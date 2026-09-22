@@ -1,4 +1,6 @@
 :root {
+    --primary-color: #eff2f4;
+    --secondary-color: #f4a261;
     --accent1-color: #010b0f;
     --accent2-color: #0bef41;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -12,7 +14,7 @@
 }
 
 header {
-    background-color: #1005dbfd;
+    background-color: var(--primary-color);
     color: var(--accent2-color);
 }
 
@@ -23,7 +25,7 @@ header img {
 }
 
 header li a {
-    color: #fff;
+    color: var(--accent1-color);
 }
 
 body {
@@ -80,17 +82,24 @@ article {
     height: auto;
 }
 
+.hero article {
+    position: absolute;
+    top: 14rem;
+    width: 100%;
+    padding: 5px;
+    text-align: justify;
+    opacity: 0.7;
+    background-color: rgb(80, 80, 210);
+    color: #fff;
+    font-size: 13px;
+    border-radius: 100px;
+}
+
 .hero article img {
     float: right;
     width: 120px;
     margin: 5px;
     padding: 5px;
-}
-
-.hero article {
-    width: 100%;
-    position: absolute;
-    border-radius: 100px;
 }
 
 h1 {
@@ -105,22 +114,10 @@ h1 {
     font-size: 24px;
 }
 
-article {
-    position: absolute;
-    top: 14rem;
-    width: 100%;
-    padding: 5px;
-    text-align: justify;
-    opacity: 0.7;
-    background-color: rgb(80, 80, 210);
-    color: #fff;
-    font-size: 13px;
-}
-
 h2 {
     text-align: center;
     border: 1px solid rgb(0 0 0 / 0.2);
-    background-color: rgb(80, 80, 210);
+    background-color: var(--secondary-color);
 }
 
 footer {
