@@ -117,3 +117,36 @@ footer {
     text-align: center;
     color: #333;
 }
+
+/* Mobile layout */
+@media (max-width: 700px) {
+
+    header,
+    .grid,
+    footer {
+        width: 95%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        grid-column: 1;
+    }
+
+    aside {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+}
