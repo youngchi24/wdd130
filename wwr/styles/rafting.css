@@ -286,19 +286,22 @@ article {
     margin-top: 1rem;
 }
 
-/* Each adventure */
 .adventure-gallery figure {
     margin: 0;
     padding: 0;
-    text-align: center;
     background-color: #ffffff;
+    text-align: center;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Adventure images */
+.adventure-gallery figure:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
 .adventure-gallery img {
     display: block;
     width: 100%;
@@ -306,19 +309,12 @@ article {
     object-fit: cover;
 }
 
-/* Captions */
 .adventure-gallery figcaption {
     padding: 10px 5px;
+    background-color: #f5f7fa;
+    color: #1d3557;
     font-size: 0.85rem;
     font-weight: bold;
-    color: #1d3557;
-    background-color: #f5f7fa;
-}
-
-/* Hover effect */
-.adventure-gallery figure:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
 /*SOCIAL MEDIA*/
