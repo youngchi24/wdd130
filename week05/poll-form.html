@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Poll-Form</title>
+
+    <meta name="description"
+      content="Learn about Prosper Chidike Nwogu, a software development student from Abia State, Nigeria, studying Web Fundamentals in WDD 130.">
+
+    <meta name="author" content="Prosper Chidike Nwogu(YOUNGCHI)">
+
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+<header>
+    <h1>Contact Information</h1>
+</header>
+
+<main>
+    <form>
+        <div class="from-item column2">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Youngchi" required>
+        </div>
+
+        <div class="from-item column2">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="youngchi@mail.com" required>
+        </div>
+        <!--
+        <label>Full Name: <input type="text" name="fullname" required></label>
+        <label>Email: <input type="email" name="useremail" required></label>
+         -->
+
+        <div class="from-item column1">
+            <label for="browser">Select your favorite browser</label>
+            <select name="browser" id="browser">
+                <option value="0"></option>
+                <option value="1">Firefox</option>
+                <option value="2">Chrome</option>
+                <option value="3">Edge</option>
+                <option value="3">Safari</option>
+                <option value="3">Brave</option>
+                <option value="3">Opera</option>
+                <option value="3">Phonix</option>
+                <option value="3">Others</option>
+            </select>
+
+            <label>Do you have a household pet? <input type="checkbox" id="pet" name="pet"></label>
+            <label>List the places you have lived. <textarea
+                  placeholder="Nigeria, USA, Singapore, Ghana" id="feedback" name="feedback"
+                  rows="4"></textarea>
+            </label>
+        </div>
+
+        <button type="submit">Submit Poll</button>
+    </form>
+</main>
+
+<footer>
+
+</footer>
