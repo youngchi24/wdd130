@@ -22,50 +22,56 @@
 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="trips.html">Trips</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <!-- COMPANY INFORMATION -->
         <section class="contact-info">
             <h1>White Water Rafting Company</h1>
 
             <p>
-                <strong>123 Main River Street</strong><br>
-                Kolob, California<br>
-                <strong>+1 999 999 9999</strong><br>
-                <strong>info@whitewater.com</strong>
+                123 Main River Street<br>
+                Kolob, Utah 84710<br>
+                Phone: +1 999 999 9999<br>
+                Email: info@whitewater.com
             </p>
         </section>
 
-        <!-- CONTACT AREA -->
         <section class="contact-section">
 
-            <!-- GOOGLE MAP -->
             <div class="map">
-                <iframe src="https://www.google.com/maps?q=Kolob%20Canyons%20Utah&output=embed"
-                  width="100%" height="300" loading="lazy"
-                  title="Map showing the White Water Rafting Company location">
+                <iframe src="https://www.google.com/maps?q=Kolob+Canyons+Utah&output=embed"
+                  title="Map showing the White Water Rafting Company location" width="100%"
+                  height="350" loading="lazy">
                 </iframe>
             </div>
 
-            <!-- CONTACT FORM -->
             <form class="contact-form">
 
                 <div class="form-item">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+
+                    <input type="text" id="name" name="name" autocomplete="name" required>
                 </div>
 
                 <div class="form-item">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+
+                    <input type="email" id="email" name="email" autocomplete="email" required>
                 </div>
 
                 <fieldset>
@@ -73,7 +79,7 @@
 
                     <label for="general-inquiry">
                         <input type="radio" id="general-inquiry" name="purpose"
-                          value="general-inquiry">
+                          value="general-inquiry" required>
                         General Inquiry
                     </label>
 
@@ -92,24 +98,24 @@
 
                 <div class="form-item">
                     <label for="message">Message:</label>
+
                     <textarea id="message" name="message" rows="6" required></textarea>
                 </div>
 
-                <label class="checkbox-label">
+                <label class="checkbox-label" for="newsletter">
                     <input type="checkbox" id="newsletter" name="newsletter" value="yes">
                     Please subscribe me to the monthly newsletter
                 </label>
 
-                <button type="submit">Get in Touch!</button>
+                <button type="submit">Send Message</button>
 
             </form>
 
         </section>
 
-        <!-- EMPLOYEE PROFILES -->
         <section class="employees">
 
-            <h2>We Are Here to Serve You</h2>
+            <h2>Meet Our Team</h2>
 
             <div class="employee-grid">
 
@@ -151,6 +157,7 @@
         </p>
 
         <nav class="socialmedia">
+
             <a href="https://facebook.com">
                 <img src="images/facebook.svg" alt="Facebook Icon">
             </a>
@@ -162,6 +169,7 @@
             <a href="https://instagram.com">
                 <img src="images/instagram.svg" alt="Instagram Icon">
             </a>
+
         </nav>
 
     </footer>

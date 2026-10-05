@@ -394,7 +394,7 @@ footer p {
     }
 }
 
-/* CONTACT PAGE */
+/* CONTACT INFORMATION */
 
 .contact-info {
     text-align: center;
@@ -402,8 +402,8 @@ footer p {
 }
 
 .contact-info h1 {
+    margin-bottom: 0.75rem;
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
 }
 
 .contact-info p {
@@ -416,13 +416,13 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    align-items: start;
     padding: 1.5rem;
 }
 
-/* MAP */
+/* GOOGLE MAP */
 
 .map iframe {
+    display: block;
     width: 100%;
     min-height: 350px;
     border: none;
@@ -438,12 +438,12 @@ footer p {
 
 .contact-form .form-item {
     display: grid;
-    gap: 0.4rem;
+    gap: 0.5rem;
 }
 
 .contact-form label {
-    font-weight: bold;
     color: var(--primary-color);
+    font-weight: bold;
 }
 
 .contact-form input[type="text"],
@@ -467,18 +467,18 @@ footer p {
     border-color: var(--secondary-color);
 }
 
-/* RADIO BUTTONS */
+/* MESSAGE PURPOSE */
 
 .contact-form fieldset {
+    padding: 1rem;
     border: 1px solid var(--border-color);
     border-radius: 6px;
-    padding: 1rem;
 }
 
 .contact-form legend {
-    font-weight: bold;
-    color: var(--primary-color);
     padding: 0 0.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 .contact-form fieldset label {
@@ -493,7 +493,7 @@ footer p {
     margin-right: 0.5rem;
 }
 
-/* NEWSLETTER CHECKBOX */
+/* NEWSLETTER */
 
 .checkbox-label {
     display: flex;
@@ -551,8 +551,8 @@ footer p {
     max-width: 180px;
     height: 180px;
     object-fit: cover;
-    border-radius: 50%;
     border: 3px solid var(--secondary-color);
+    border-radius: 50%;
 }
 
 .employee-grid figcaption {
