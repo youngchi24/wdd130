@@ -394,7 +394,7 @@ footer p {
     }
 }
 
-/* CONTACT INFORMATION */
+/* Contact Page */
 
 .contact-info {
     text-align: center;
@@ -410,8 +410,6 @@ footer p {
     line-height: 1.8;
 }
 
-/* CONTACT SECTION */
-
 .contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -419,17 +417,22 @@ footer p {
     padding: 1.5rem;
 }
 
-/* GOOGLE MAP */
+.contact-section h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
+
+.map {
+    width: 100%;
+}
 
 .map iframe {
     display: block;
     width: 100%;
-    min-height: 350px;
+    height: 300px;
     border: none;
     border-radius: 8px;
 }
-
-/* CONTACT FORM */
 
 .contact-form {
     display: grid;
@@ -467,8 +470,6 @@ footer p {
     border-color: var(--secondary-color);
 }
 
-/* MESSAGE PURPOSE */
-
 .contact-form fieldset {
     padding: 1rem;
     border: 1px solid var(--border-color);
@@ -493,21 +494,17 @@ footer p {
     margin-right: 0.5rem;
 }
 
-/* NEWSLETTER */
-
 .checkbox-label {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-weight: normal !important;
+    font-weight: normal;
 }
 
 .checkbox-label input {
     width: 1rem;
     height: 1rem;
 }
-
-/* SUBMIT BUTTON */
 
 .contact-form button {
     width: 100%;
@@ -525,7 +522,7 @@ footer p {
     background-color: var(--secondary-color);
 }
 
-/* EMPLOYEES */
+/* Employee Profiles */
 
 .employees {
     padding: 1.5rem;
@@ -561,12 +558,16 @@ footer p {
     line-height: 1.5;
 }
 
-/* CONTACT PAGE RESPONSIVE DESIGN */
+/* Contact Page Responsive Design */
 
 @media (max-width: 700px) {
 
     .contact-section {
         grid-template-columns: 1fr;
+    }
+
+    .contact-section h2 {
+        grid-column: 1;
     }
 
     .employee-grid {
@@ -577,5 +578,4 @@ footer p {
         max-width: 160px;
         height: 160px;
     }
-
 }
