@@ -579,3 +579,581 @@ footer p {
         height: 160px;
     }
 }
+
+/* =========================================
+   HOME PAGE
+========================================= */
+
+/* Home page hero */
+.home-hero {
+    position: relative;
+    min-height: 500px;
+}
+
+.home-hero > img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Hero heading */
+.home-hero h1 {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    color: var(--white-color);
+    background-color: rgba(29, 53, 87, 0.90);
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Newsletter section */
+.newsletter {
+    padding: 2rem;
+    background-color: var(--light-color);
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 1rem;
+}
+
+.newsletter > p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+.newsletter form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: end;
+    gap: 1rem;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.newsletter label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+.newsletter input:focus {
+    outline: 2px solid var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.newsletter button {
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* =========================================
+   HOME PAGE
+========================================= */
+
+/* Hero image and title */
+
+.home-hero {
+    position: relative;
+}
+
+.home-hero > img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.home-hero h1 {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    color: var(--white-color);
+    background-color: rgba(29, 53, 87, 0.90);
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Home hero call to action */
+
+.home-hero-cta {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 1.5rem;
+    padding: 1.25rem;
+    color: var(--white-color);
+    background-color: rgba(29, 53, 87, 0.94);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.home-hero-cta p {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Shared call-to-action buttons */
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.25rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Newsletter */
+
+.newsletter {
+    padding: 2rem;
+    background-color: var(--light-color);
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 1rem;
+}
+
+.newsletter > p {
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+}
+
+.newsletter form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: end;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.newsletter .form-item {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.newsletter label {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+.newsletter input:focus {
+    outline: 2px solid var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.newsletter button {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Home page content cards */
+
+.home-content {
+    padding: 2rem;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.home-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.home-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.home-card h3 {
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.home-card p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: auto;
+    padding: 0.7rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Final home page call to action */
+
+.home-final-cta {
+    padding: 2rem;
+    background-color: var(--light-color);
+    text-align: center;
+}
+
+.home-final-cta p {
+    max-width: 650px;
+    margin: 1rem auto 1.5rem;
+    line-height: 1.7;
+}
+
+/* =========================================
+   TRIPS PAGE
+========================================= */
+
+/* Trips introduction */
+
+.trips-intro {
+    padding: 2rem;
+    text-align: center;
+}
+
+.trips-intro h1 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    font-size: 2rem;
+}
+
+.trips-intro p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.7;
+}
+
+/* Trip cards layout */
+
+.available-trips {
+    padding: 2rem;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 1.25rem;
+}
+
+.trip-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.trip-card > img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.trip-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+}
+
+.trip-card-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.trip-card-content p {
+    margin-bottom: 0.9rem;
+    line-height: 1.7;
+}
+
+.trip-card-content .trip-level {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.trip-card-content ul {
+    margin: 0 0 1.25rem 1.25rem;
+    line-height: 1.8;
+}
+
+.trip-link {
+    display: block;
+    margin-top: auto;
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.trip-link:hover {
+    background-color: var(--secondary-color);
+}
+
+.trip-note {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Trip comparison table */
+
+.trip-table-section {
+    padding: 2rem;
+}
+
+.trip-table-section > p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white-color);
+}
+
+.trip-table caption {
+    padding: 1rem;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.trip-table th,
+.trip-table td {
+    padding: 0.9rem;
+    border: 1px solid var(--border-color);
+    text-align: left;
+    vertical-align: top;
+}
+
+.trip-table thead {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.trip-table tbody tr:nth-child(even) {
+    background-color: var(--light-color);
+}
+
+.trip-table tbody tr:hover {
+    background-color: #e8eef5;
+}
+
+/* Trips page final call to action */
+
+.trips-contact {
+    padding: 2rem;
+    background-color: var(--light-color);
+    text-align: center;
+}
+
+.trips-contact h2 {
+    margin-bottom: 1rem;
+}
+
+.trips-contact p {
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.7;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* Home hero */
+
+    .home-hero {
+        min-height: 350px;
+    }
+
+    .home-hero > img {
+        height: 350px;
+    }
+
+    .home-hero h1 {
+        top: 15px;
+        padding: 0.75rem;
+        font-size: 1.4rem;
+    }
+
+    .home-hero-cta {
+        left: 3%;
+        right: 3%;
+        bottom: 1rem;
+        padding: 0.75rem;
+    }
+
+    .home-hero-cta p {
+        font-size: 0.95rem;
+    }
+
+    /* Home newsletter */
+
+    .newsletter,
+    .home-content,
+    .home-final-cta {
+        padding: 1rem;
+    }
+
+    .newsletter form {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+
+    /* Home cards */
+
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-card img {
+        height: 220px;
+    }
+
+    /* Trips page */
+
+    .trips-intro,
+    .available-trips,
+    .trip-table-section,
+    .trips-contact {
+        padding: 1rem;
+    }
+
+    .trip-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trip-card > img {
+        height: 220px;
+    }
+
+    .trip-table th,
+    .trip-table td {
+        padding: 0.65rem;
+        font-size: 0.85rem;
+    }
+
+    .trips-intro h1 {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (min-width: 701px) and (max-width: 840px) {
+
+    .trip-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
